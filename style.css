@@ -64,6 +64,13 @@ h1 em{font-style:italic;color:var(--accent);font-weight:500}
 .chip .e{font-size:16px;line-height:1}
 .chip.cert{border-color:color-mix(in srgb,var(--accent) 45%,var(--border))}
 .ms{width:15px;height:15px;flex:none}
+.stack{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.stack-item{display:inline-flex;align-items:center;gap:10px;padding:10px 16px 10px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow);font-weight:600;font-size:15px}
+.stack-item img{width:26px;height:26px;flex:none}
+.stack-label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:36px}
+.module .mh{display:flex;align-items:center;justify-content:space-between}
+.module .mh img{width:28px;height:28px}
+@media(min-width:961px){.module:last-child:nth-child(3n+1){grid-column:1/-1}}
 .lede{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:720px}
 
 .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
