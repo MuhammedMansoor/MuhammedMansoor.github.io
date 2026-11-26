@@ -16,14 +16,16 @@
 
 <nav>
   <div class="wrap">
-    <a href="index.html" class="logo">Mansoor<span>.</span>bi</a>
+    <div class="brand">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle day / night theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg></button>
+      <a href="index.html" class="logo">Mansoor<span>.</span>bi</a>
+    </div>
     <div class="links">
+      <a href="index.html" aria-current="page" class="hide-sm">Work Profile</a>
       <a href="#why" class="hide-sm">Why me</a>
       <a href="#experience" class="hide-sm">Experience</a>
-      <a href="#work" class="hide-sm">Work</a>
-      <a href="training.html">Training</a>
+      <a href="training.html" class="hide-xs">Training Profile</a>
       <button class="btn primary btn-sm" data-contact="cv">Request CV</button>
-      <button class="icon-btn" id="themeBtn" aria-label="Toggle colour theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg></button>
     </div>
   </div>
 </nav>
@@ -31,8 +33,15 @@
 <header class="hero">
   <div class="wrap">
     <span class="eyebrow">BI Engineer · Kuwait</span>
-    <h1>I turn factory floors and ERPs<br>into <em>real-time decisions.</em></h1>
-    <p class="lede">I'm a mechanical engineer who became a BI engineer. For 5+ years I've built data products for oil &amp; gas manufacturing and supply chain that operators, planners and executives use every day. They run from live machine telemetry on Microsoft Fabric to Python pipelines and enterprise Power BI models.</p>
+    <h1>I turn factory floors and project data into <em>automated decision-making engines.</em></h1>
+    <div class="creds-strip">
+      <span class="chip"><span class="e">⚙️</span>Mechanical Engineer</span>
+      <span class="chip"><span class="e">📈</span>5+ Years Experience</span>
+      <span class="chip"><span class="e">🛢️</span>Oil &amp; Gas</span>
+      <span class="chip"><span class="e">🏭</span>Manufacturing</span>
+      <span class="chip cert"><svg class="ms" viewBox="0 0 23 23" aria-hidden="true"><path fill="#f25022" d="M1 1h10v10H1z"/><path fill="#7fba00" d="M12 1h10v10H12z"/><path fill="#00a4ef" d="M1 12h10v10H1z"/><path fill="#ffb900" d="M12 12h10v10H12z"/></svg>DP-600 Certified</span>
+      <span class="chip cert"><svg class="ms" viewBox="0 0 23 23" aria-hidden="true"><path fill="#f25022" d="M1 1h10v10H1z"/><path fill="#7fba00" d="M12 1h10v10H12z"/><path fill="#00a4ef" d="M1 12h10v10H1z"/><path fill="#ffb900" d="M12 12h10v10H12z"/></svg>PL-300 Certified</span>
+    </div>
     <div class="cta">
       <button class="btn primary" data-contact="cv">Request my CV →</button>
       <a class="btn" href="#experience">View experience</a>
@@ -50,13 +59,13 @@
 <section id="why">
   <div class="wrap">
     <div class="sec-head">
-      <div><div class="label">Why hire me</div><h2>Engineering mind, business outcomes</h2></div>
+      <div><div class="label">💼 Why hire me</div><h2>Engineering mind, business outcomes</h2></div>
       <p>Three things I bring to any data team.</p>
     </div>
     <div class="pillars">
-      <div class="pillar reveal"><span class="n">i.</span><h3>I understand the operation behind the data</h3><p>With a mechanical engineering background and years on the shop floor, I know what a machine stoppage, an MRP run or an ageing PO really means before it reaches a model. I've worked hands-on with Oracle Fusion, SAP S/4HANA, Primavera P6 and Dataverse.</p></div>
-      <div class="pillar reveal"><span class="n">ii.</span><h3>Production, not prototypes</h3><p>Everything I build runs every day: real-time telemetry, governed ETL, semantic models serving 100+ users, Row-Level Security and automated refresh. Each one is measured by downtime avoided and hours saved.</p></div>
-      <div class="pillar reveal"><span class="n">iii.</span><h3>I make teams self-sufficient</h3><p>I've trained 200+ professionals across India and the GCC in Power BI and Power Automate, and raised in-house adoption by 60%. What I build gets used, and teams can keep it running after I hand it over.</p><a href="training.html">See my training work →</a></div>
+      <div class="pillar reveal"><span class="n">🔧</span><h3>I understand the operation behind the data</h3><p>With a mechanical engineering background and years on the shop floor, I know what a machine stoppage, an MRP run or an ageing PO really means before it reaches a model. I've worked hands-on with Oracle Fusion, SAP S/4HANA, Primavera P6 and Dataverse.</p></div>
+      <div class="pillar reveal"><span class="n">🚀</span><h3>Production, not prototypes</h3><p>Everything I build runs every day: real-time telemetry, governed ETL, semantic models serving 100+ users, Row-Level Security and automated refresh. Each one is measured by downtime avoided and hours saved.</p></div>
+      <div class="pillar reveal"><span class="n">🎓</span><h3>I make teams self-sufficient</h3><p>I've trained 200+ professionals across India and the GCC in Power BI and Power Automate. What I build gets used, and teams can keep it running after I hand it over.</p><a href="training.html">View training profile →</a></div>
     </div>
   </div>
 </section>
@@ -64,7 +73,7 @@
 <section id="experience">
   <div class="wrap">
     <div class="sec-head">
-      <div><div class="label">Career</div><h2>Experience</h2></div>
+      <div><div class="label">🧭 Career</div><h2>Experience</h2></div>
       <p>Highlights only. <a href="#" data-contact="cv" style="color:var(--accent);font-weight:600">Request my CV</a> for full role details.</p>
     </div>
     <div class="jobs">
@@ -74,9 +83,9 @@
           <span class="now">Current</span>
         </div>
         <dl class="meta">
-          <div><dt>Period</dt><dd>Sep 2023 to present</dd></div>
-          <div><dt>Location</dt><dd>Kuwait</dd></div>
-          <div><dt>Industry</dt><dd>Oil &amp; Gas · ESP manufacturing</dd></div>
+          <div><dt><span class="e">📅</span>Period</dt><dd>Sep 2023 to present</dd></div>
+          <div><dt><span class="e">📍</span>Location</dt><dd>Kuwait</dd></div>
+          <div><dt><span class="e">🏭</span>Industry</dt><dd>Oil &amp; Gas · ESP manufacturing</dd></div>
         </dl>
         <div class="wins">
           <div class="win"><b class="num">−60%</b><span>unplanned machine downtime with real-time monitoring</span></div>
@@ -84,7 +93,7 @@
           <div class="win"><b class="num">80%</b><span>faster model refresh, 30% smaller models</span></div>
           <div class="win"><b class="num">2×</b><span>Digital Champion Finalist (2023 &amp; 2024)</span></div>
         </div>
-        <h4>Tools</h4>
+        <h4>🧰 Tools</h4>
         <div class="tags"><span class="tag">Microsoft Fabric</span><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Python</span><span class="tag">MySQL</span><span class="tag">Oracle Fusion</span><span class="tag">Power Automate</span><span class="tag">Power Apps</span><span class="tag">SharePoint</span><span class="tag">Primavera P6</span></div>
       </article>
 
@@ -93,9 +102,9 @@
           <div><h3>Walkaroo International</h3><div class="role">Material Planning Analyst, Sourcing &amp; Inventory</div></div>
         </div>
         <dl class="meta">
-          <div><dt>Period</dt><dd>Mar 2021 to Jun 2023</dd></div>
-          <div><dt>Location</dt><dd>India</dd></div>
-          <div><dt>Industry</dt><dd>Manufacturing · Supply chain</dd></div>
+          <div><dt><span class="e">📅</span>Period</dt><dd>Mar 2021 to Jun 2023</dd></div>
+          <div><dt><span class="e">📍</span>Location</dt><dd>India</dd></div>
+          <div><dt><span class="e">🏭</span>Industry</dt><dd>Manufacturing · Supply chain</dd></div>
         </dl>
         <div class="wins">
           <div class="win"><b class="num">60→95%</b><span>purchasing accuracy after master-data governance</span></div>
@@ -103,7 +112,7 @@
           <div class="win"><b class="num">−75%</b><span>weekly reporting preparation time</span></div>
           <div class="win"><b class="num">97%</b><span>subcontractor delivery commitment</span></div>
         </div>
-        <h4>Tools</h4>
+        <h4>🧰 Tools</h4>
         <div class="tags"><span class="tag">SAP S/4HANA</span><span class="tag">SAP MM / MRP</span><span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">AppSheet</span><span class="tag">Excel</span></div>
       </article>
     </div>
@@ -113,7 +122,7 @@
 <section id="work">
   <div class="wrap">
     <div class="sec-head">
-      <div><div class="label">Selected work</div><h2>What I've shipped</h2></div>
+      <div><div class="label">🛠️ Selected work</div><h2>What I've shipped</h2></div>
       <p>Three production systems, in brief.</p>
     </div>
     <div class="cases">
@@ -145,7 +154,7 @@
 <section id="projects">
   <div class="wrap">
     <div class="sec-head">
-      <div><div class="label">Open source</div><h2>GitHub projects</h2></div>
+      <div><div class="label">💻 Open source</div><h2>GitHub projects</h2></div>
       <div class="filters" role="group" aria-label="Filter projects">
         <button class="filter" data-f="all" aria-pressed="true">All</button>
         <button class="filter" data-f="eng" aria-pressed="false">Data engineering</button>
@@ -159,19 +168,19 @@
 
 <section id="credentials">
   <div class="wrap">
-    <div class="sec-head"><div><div class="label">Proof</div><h2>Certifications &amp; recognition</h2></div></div>
+    <div class="sec-head"><div><div class="label">🏅 Proof</div><h2>Certifications &amp; recognition</h2></div></div>
     <div class="creds">
-      <div class="cred reveal"><h4>Microsoft certified</h4><ul>
+      <div class="cred reveal"><h4><svg class="ms" viewBox="0 0 23 23" aria-hidden="true"><path fill="#f25022" d="M1 1h10v10H1z"/><path fill="#7fba00" d="M12 1h10v10H12z"/><path fill="#00a4ef" d="M1 12h10v10H1z"/><path fill="#ffb900" d="M12 12h10v10H12z"/></svg>Microsoft certified</h4><ul>
         <li>Fabric Analytics Engineer Associate<small>DP-600</small></li>
         <li>Power BI Data Analyst Associate<small>PL-300</small></li>
         <li>Applied Skills: Power Automate<small>Automated processes</small></li>
       </ul></div>
-      <div class="cred reveal"><h4>Awards</h4><ul>
+      <div class="cred reveal"><h4>🏆 Awards</h4><ul>
         <li>Digital Champion Finalist, 2024<small>Real-Time Project Tracking Dashboard</small></li>
         <li>Digital Champion Finalist, 2023<small>ShopFloor360 Production Monitoring</small></li>
         <li>Best Employee<small>Q1 &amp; Q3, 2023</small></li>
       </ul></div>
-      <div class="cred reveal"><h4>Education</h4><ul>
+      <div class="cred reveal"><h4>🎓 Education</h4><ul>
         <li>B.Tech, Mechanical Engineering<small>Govt. College of Engineering, Kannur · CGPA 8.28</small></li>
         <li>Languages<small>English, Malayalam, Hindi, Tamil, Arabic (basic)</small></li>
       </ul></div>
@@ -191,7 +200,7 @@
   </div>
 </section>
 
-<footer><div class="wrap"><span>© <span id="yr"></span> Muhammed Mansoor C</span><span><a href="training.html">Training</a> · <a href="https://www.linkedin.com/in/muhammed-mansoor-c/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/MuhammedMansoor" target="_blank" rel="noopener">GitHub</a></span></div></footer>
+<footer><div class="wrap"><span>© <span id="yr"></span> Muhammed Mansoor C</span><span><a href="training.html">Training Profile</a> · <a href="https://www.linkedin.com/in/muhammed-mansoor-c/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/MuhammedMansoor" target="_blank" rel="noopener">GitHub</a></span></div></footer>
 
 <script src="main.js"></script>
 </body>
